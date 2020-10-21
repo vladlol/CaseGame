@@ -75,11 +75,9 @@ def runprog():
 
         if int(choice) == 1:
             open_case()
-        
-        if int(choice) == 2:
+        else if int(choice) == 2:
             check_inventory()
-
-        if int(choice) == 3:
+        else if int(choice) == 3:
             break
 
 runprog()
