@@ -22,7 +22,6 @@ def open_case():
     os.fsync(file_object.fileno())
     print_color(str(currItem))
     print(Style.RESET_ALL) 
-    print("cpapi was here")
 
 def print_color(item):
     if item == "MILSPEC":
