@@ -71,13 +71,21 @@ def runprog():
         print("2 - Check inventory")
         print("3 - Exit")
 
+        # listen to 192.168.0.1
         choice = input("Enter option:")
 
+
+        # once we get a "request"
+            # roll the case
+            # get user inventory
         if int(choice) == 1:
+            # execute the command
             open_case()
-        else if int(choice) == 2:
+            # data = open_case()
+            # send_respone(data)
+        elif int(choice) == 2:
             check_inventory()
-        else if int(choice) == 3:
+        elif int(choice) == 3:
             break
 
 runprog()

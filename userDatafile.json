@@ -1,0 +1,14 @@
+{
+	"username":"vladlol",
+	"inventory": {
+		{
+			"itemName":"Marble Fade",
+			"rarity":"MILSPEC"
+		},
+		{
+			"itemName":"Dragon Lore",
+			"rarity":"RESTRICTED"
+		}
+
+	}
+}
