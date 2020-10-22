@@ -1,0 +1,14 @@
+{
+	"username": "cpapi",
+	"inventory": [
+		{
+			"itemName":"generic Fade",
+			"rarity":"SPECIAL"
+		},
+		{
+			"itemName":"safari mesh",
+			"rarity":"MILSPEC"
+		}
+
+	]
+}

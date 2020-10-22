@@ -1,8 +1,12 @@
 import numpy
 import os
 import sys 
+import json
 import tkinter as tk
 from colorama import Fore, Back, Style 
+
+sys.path.append(".")
+from User import User
 
 
 file_object = open("inventory.txt", "w+")
@@ -36,6 +40,11 @@ def print_color(item):
             print("You opened a " + Fore.YELLOW + item)
 
 
+def loadjson(filename):
+    with open(filename) as json_file:
+        return json.load(json_file)
+
+
 def check_inventory():
     milspec = []
     restricted = []
@@ -66,27 +75,37 @@ def check_inventory():
 
 
 def runprog():
-    while True:
-        print("1 - Open Case")
-        print("2 - Check inventory")
-        print("3 - Exit")
+    print(getUser("vladlol"))
+    print(getUser("cpapi"))  
+    user = User("dog")
+    print(user.jsonformat()) 
+    
+def getUser(username):
+    user = loadjson(username + ".json")
+    return user
 
-        # listen to 192.168.0.1
-        choice = input("Enter option:")
+
+    # while True:
+    #     print("1 - Open Case")
+    #     print("2 - Check inventory")
+    #     print("3 - Exit")
+
+    #     # listen to 192.168.0.1
+    #     choice = input("Enter option:")
 
 
-        # once we get a "request"
-            # roll the case
-            # get user inventory
-        if int(choice) == 1:
-            # execute the command
-            open_case()
-            # data = open_case()
-            # send_respone(data)
-        elif int(choice) == 2:
-            check_inventory()
-        elif int(choice) == 3:
-            break
+    #     # once we get a "request"
+    #         # roll the case
+    #         # get user inventory
+    #     if int(choice) == 1:
+    #         # execute the command
+    #         open_case()
+    #         # data = open_case()
+    #         # send_respone(data)
+    #     elif int(choice) == 2:
+    #         check_inventory()
+    #     elif int(choice) == 3:
+    #         break
 
 runprog()
 

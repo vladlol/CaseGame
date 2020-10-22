@@ -1,6 +1,6 @@
 {
-	"username":"vladlol",
-	"inventory": {
+	"username": "vladlol",
+	"inventory": [
 		{
 			"itemName":"Marble Fade",
 			"rarity":"MILSPEC"
@@ -10,5 +10,5 @@
 			"rarity":"RESTRICTED"
 		}
 
-	}
+	]
 }
